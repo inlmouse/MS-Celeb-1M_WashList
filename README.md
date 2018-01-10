@@ -46,6 +46,17 @@ We searched all the individuals of LFW in MSCeleb1M and list the nearest neighbo
 
 According to our test, the pair with 0.5 over cosine similarity can be considered as the same person with a high probability. So we list 1266 pairs whose similarity is more than 0.5 in *msceleb1m_lfw_overlaplist.txt*  as the overlap with LFW. Of course, the threshold can be determined by your own.
 
+## Accuracy on LFW
+We simply trained a same model on the 3 datasets, and the LFW accuracy were listed below:
+
+|  Dataset  | Accuracy |
+| :-------: | :------: |
+| Original Dataset  |   98.21% |
+| XiangWu's Cleaned Dataset  |  99.42% |
+| Our Cleaned Dataset  |  99.55% |
+
+Due to the inadequacy of our work, this result may not explain any problems.
+
 ## Future Work
 
 - Considering our CNN model is not good enough, this clean list certainly still exist some noises, and some images which are not noises were deleted. We will update this list if we get a better CNN model;
